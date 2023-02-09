@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="navbar">
+      <img src="images/logo.svg" alt="Logo" class="logo">
+      
+      <nav id="sidemenu">
+        <ul >
+          <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt="arrowup"></a>
+            <div class="dropdown">
+                <ul >
+                    <li><a href="#"> <img src="images/icon-todo.svg" alt="todo"> Todo List</a></li>
+                    <li><a href="#"> <img src="images/icon-calendar.svg" alt="calendar"> Calendar</a></li>
+                    <li><a href="#"> <img src="images/icon-reminders.svg" alt="reminder"> Reminders</a></li>
+                    <li><a href="#"> <img src="images/icon-planning.svg" alt="planning"> Planning</a></li>
+                  </ul>
+            </div>
+          </li>
+          <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt="arrowup"></a>
+            <div class="dropdown">
+              <ul >
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        
+        <img src="images/icon-close-menu.svg" onclick="closeNav()" alt="close" class="close-menu">
+   
+        <div class="nav-right">
+          <button class="btn1">Login</button>
+          <button class="btn2">Register</button>
+        </div>
+        
+     
+      </nav>
+      <img src="images/icon-menu.svg" onclick="openNav()" alt="Menu" class="menu-open">
+  </div>
+    
+<div class="row">
+  <div class="row-1">
+    <h1> Make <br> remote work</h1>
+    <p>Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+    <button class="btn-hero"> Learn more</button>
+    <div class="hero-icons">
+      <img src="images/client-databiz.svg" alt="databiz">
+      <img src="images/client-audiophile.svg" alt="audio">
+      <img src="images/client-meet.svg" alt="meet">
+      <img src="images/client-maker.svg" alt="maker">
+    </div>
+</div>
+
+  <div class="row-2">
+      <img src="images/image-hero-desktop.png" alt="image" class="desktop-img">
+      <img src="images/image-hero-mobile.png" alt="image" class="mob-img">
+      </div>
+  </div>
+
+</div>
+
+<script src="javascript/javascript.js"></script>
+</body>
+</html>
